@@ -36,7 +36,7 @@
             <div class="col-6 align-items-center">
                 <h1 class="fw-bold text-center mt-5">Vue Email List</h1>
                 <ul class="list-unstyled text-center mt-5">
-                <li v-for="email in generatedEmails">
+                <li v-for="email in generatedEmails" v-if="generatedEmails.length == 10">
                     {{ email }}
                 </li>
                 </ul>
